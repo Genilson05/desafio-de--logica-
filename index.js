@@ -3,36 +3,43 @@
 // Data: 28/08/2023
 
 // Variáveis
-let nomeHeroi = "Superman"
-let xpHeroi = 10500
-let nivelHeroi
+let nomeHeroi = ["Capitão América" , "Batman" , "Mulher Maravilha" , "Superman", "Morte", "Jesus"]
+let xpHeroi = [ 3950, 5030, 6000, 7500, 9999, 1000000 ]
+let nivelHeroi = [" "," "," "," "," "," ",]
 
+// Laço de repetição
+for ( let i = 0; i < nomeHeroi.length; i++){
+    
+    let nome = nomeHeroi[i]
+    let xp = xpHeroi[i]
+    let nivel = nivelHeroi[i] 
 
-// Estrutura de Decisão
-if (xpHeroi < 1000){
-    nivelHeroi = "Ferro"
+    // Estrutura de Decisão
+    if (xp < 1000){
+        nivel = "Ferro"
 
-} else if(xpHeroi >= 1001 && xpHeroi <= 2000) {
-    nivelHeroi = "Bronze"
+    } else if(xp >= 1001 && xp <= 2000) {
+        nivel = "Bronze"
 
-} else if (xpHeroi >= 2001 && xpHeroi <= 5000){
-    nivelHeroi = "Prata"
+    } else if (xp >= 2001 && xp <= 5000){
+        nivel = "Prata"
 
-} else if (xpHeroi >= 5001 && xpHeroi <= 7000) {
-    nivelHeroi = "Ouro"
+    } else if (xp >= 5001 && xp <= 7000) {
+        nivel = "Ouro"
 
-} else if (xpHeroi >= 7001 && xpHeroi <= 8000) {
-    nivelHeroi = "Platina"
+    } else if (xp >= 7001 && xp <= 8000) {
+        nivel = "Platina"
 
-} else if (xpHeroi >= 8001 && xpHeroi <= 9000) {
-    nivelHeroi = "Ascendente"
+    } else if (xp >= 8001 && xp <= 9000) {
+        nivel = "Ascendente"
 
-} else if (xpHeroi >= 9001 && xpHeroi <= 10000){
-    nivelHeroi = "Imortal"
+    } else if (xp >= 9001 && xp <= 10000){
+        nivel = "Imortal"
 
-} else if (xpHeroi >= 10001){
-    nivelHeroi = "Radiante"
+    } else if (xp >= 10001){
+        nivel = "Radiante"
+    }
+
+    // Saída
+    console.log(`O Herói de nome ${nome} está no nível ${nivel}`)
 }
-
-// Saída
-console.log(`O Herói de nome ${nomeHeroi} está no nível ${nivelHeroi}`)
