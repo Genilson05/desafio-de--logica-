@@ -1,4 +1,6 @@
 // Desafio de projeto 01
+// Dev: Thales Cardoso
+// Data: 28/08/2023
 
 // Variáveis
 let nomeHeroi = "Superman"
