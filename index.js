@@ -5,14 +5,14 @@
 // Variáveis
 let nomeHeroi = ["Capitão América" , "Batman" , "Mulher Maravilha" , "Superman", "Morte", "Jesus"]
 let xpHeroi = [ 3950, 5030, 6000, 7500, 9999, 1000000 ]
-let nivelHeroi = [" "," "," "," "," "," ",]
 
 // Laço de repetição
 for ( let i = 0; i < nomeHeroi.length; i++){
     
+   // Variáveis
     let nome = nomeHeroi[i]
     let xp = xpHeroi[i]
-    let nivel = nivelHeroi[i] 
+    let nivel
 
     // Estrutura de Decisão
     if (xp < 1000){
